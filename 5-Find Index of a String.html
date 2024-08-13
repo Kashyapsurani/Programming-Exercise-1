@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Index of a String</title>
+</head>
+<body>
+    
+
+    <script>
+         function findIndex(array, number) {
+
+                for (let i = 0; i < array.length; i++) {
+
+                    if (array[i] == number) {
+                        return i
+                    }
+
+                }
+            }
+            var array = ['a','b','c','d']
+            var number = 'b';
+
+            var reselt = findIndex(array, number)
+            console.log(reselt)
+    </script>
+</body>
+</html>

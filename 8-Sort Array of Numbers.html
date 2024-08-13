@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Array of Numbers</title>
+</head>
+<body>
+    
+    <script>
+         function sortArray(array) {
+                var n = array.length
+
+                for (var i = 0; i < n - 1; i++) {
+                    var swip = false;
+
+                    for (var a = 0; a < n - i - 1; a++) {
+                        if (array[a] > array[a + 1]) {
+                            var tem = array[a]
+                            array[a] = array[a + 1]
+                            array[a + 1] = tem
+
+                            swip = true
+                        }
+                    }
+
+                    if (!swip) {
+                        break;
+                    }
+                }
+
+                return array
+            }
+
+            var reselt = sortArray([4, 2, 5, 1, 3])
+            console.log(reselt)
+
+        
+
+    </script>
+</body>
+</html

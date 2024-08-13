@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function countOccurrences(str, substr) {
+                return str.split(substr).length - 1;
+            }
+
+            let str = "hello world hello hello";
+            let substr = "hello";
+            let count = countOccurrences(str, substr);
+            console.log(`The string "${substr}" occurs ${count} times.`); // Output: The string "hello" occurs 3 times.
+    </script>
+</body>
+</html>

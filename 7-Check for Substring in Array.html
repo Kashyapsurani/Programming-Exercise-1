@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function containsSubstring(string, newarray, newstring) {
+
+            for (let i = 0; i < string.length; i++) {
+                newarray += string
+            }
+
+            for (let a = 0; a < newarray.length; a++) {
+                if (newarray[a] == 'e') {
+                    newstring += newarray[a]
+                    count++
+                } else if (newarray[a] == 'l') {
+                    newstring += newarray[a]
+                    count++
+                }
+                if (count == 3) {
+                    break
+                }
+            }
+            console.log(newstring)
+        }
+
+        var string = ['hello', 'world']
+
+        var newarray = []
+        var newstring = ['']
+        var count = 0
+
+
+        var reselt = containsSubstring(string, newarray, newstring)
+        console.log(reselt)
+    </script>
+</body>
+
+</html>
